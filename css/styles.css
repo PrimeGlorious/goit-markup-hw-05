@@ -165,6 +165,10 @@ img {
   align-items: center;
 }
 
+.current-page {
+  color: var(--pressed-state);
+}
+
 .nav-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -550,15 +554,15 @@ img {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.card-list-item:is(:hover, :focus) .card-top-text {
-  transform: translateY(0%);
-}
-
 .card-list-link {
   display: block;
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: box-shadow var(--cubic-bezier);
+}
+
+.card-list-link:is(:hover, :focus) .card-top-text {
+  transform: translateY(0%);
 }
 
 .card-list-link:is(:hover, :focus) {
